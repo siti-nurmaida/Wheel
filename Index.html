@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="Ind">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WHEEL</title>
+</head>
+<body>
+	<div class="wheel">
+			<style type="text/css">
+				.wheel {
+					border: 2px solid black;
+					width: 55vw;
+					height: 55vw;
+					max-width: 500px;
+					max-height: 500px;
+					position: absolute;
+					border-radius: 50%;
+					animation: wheel 10s infinite linear;
+				}
+				body {
+					margin: 0;
+					height: 100vh;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				@keyframes wheel {
+					0% {
+						transform-origin: rotate(0deg);
+					}
+					100% {
+						transform: rotate(360deg);
+					}
+				}
+			</style>
+		<div class="line"></div>
+			<style type="text/css">
+				.line {
+					width: 50%;
+					height: 2px;
+					border-radius: 50%;
+					background-color: black;
+					position: absolute;
+					top: 50%;
+					transform-origin: 100% 0;
+					
+				}
+				.line:nth-of-type(2) {
+					transform: rotate(40deg);
+					background-color: blue;
+				}
+				.line:nth-of-type(3) {
+					transform: rotate(80deg);
+				}
+				.line:nth-of-type(4) {
+					transform: rotate(120deg);
+					background-color: blue;
+				}
+				.line:nth-of-type(5) {
+					transform: rotate(160deg);
+				}
+				.line:nth-of-type(6) {
+					transform: rotate(200deg);
+					background-color: blue;
+				}
+				.line:nth-of-type(7) {
+					transform: rotate(240deg);
+				}
+				.line:nth-of-type(8) {
+					transform: rotate(280deg);
+					background-color: blue;
+				}
+				.line:nth-of-type(9) {
+					transform: rotate(320deg);
+				}
+			</style>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+	</div>
+</body>
+</html>
